@@ -2,12 +2,12 @@
 <div class="generate" >
     <button class="btn btn-primary" @click="fetchCities" v-on:click="show = !show" style="padding:10px">RenderCities</button>
     <transition name="fade">
-    <dl v-if="show">
+    <div v-if="show">
     
-      <dt >{{msg}}</dt>
+      <div >{{msg}}</div>
   
-      <dt v-for="cities in city " :key="cities.id" >{{cities.name}}</dt>
-      </dl>
+      <div v-for="cities in city " :key="cities.id" >{{cities.name}}</div>
+      </div>
     </transition>
     </div>
 </template>
@@ -50,3 +50,5 @@ export default {
   opacity: 0;
 }
 </style>
+
+

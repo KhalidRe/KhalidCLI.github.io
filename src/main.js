@@ -9,7 +9,8 @@ import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 Vue.use(BootstrapVue);
-
+import $ from "jquery";
+Vue.use($);
 //scss
 
 Vue.config.productionTip = false;
