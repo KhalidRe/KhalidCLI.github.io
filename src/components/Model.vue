@@ -1,8 +1,8 @@
 <template>
     <div class="oke">
         <form @submit.prevent="onSubmit">
-        <input v-model="userName" placeholder="Skriv något" />
-        <input type="submit" value="Spela" />
+        <input v-model="userName" placeholder="Type anything" />
+        <input type="submit" value="Send" />
       </form>
       <div>{{ message }}</div>
 
@@ -19,7 +19,7 @@ export default {
   methods: {
     onSubmit() {
       console.log(this.userName);
-      this.message = "Hej " + this.userName + "!";
+      this.message = " " + this.userName + " Sent into the singularity";
     },
   },
   

@@ -1,10 +1,10 @@
 module.exports = {
   pwa: {
     manifestOptions: {
-      background_color: "hotpink",
+      background_color: "green",
     },
-    name: "Min app",
-    themeColor: "steelblue",
+    name: "OMKF",
+    themeColor: "green",
     workboxOptions: {
       runtimeCaching: [
         {
@@ -12,7 +12,6 @@ module.exports = {
           options: {
             networkTimeoutSeconds: 5,
           },
-          urlPattern: "https://avancera.app/cities/",
         },
       ],
     },

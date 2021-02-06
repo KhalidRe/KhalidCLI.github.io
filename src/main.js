@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 Vue.use(BootstrapVue);
 
-//howler
+//scss
 
 Vue.config.productionTip = false;
 var audio = new Audio(require("./assets/SkySailing.mp3"));

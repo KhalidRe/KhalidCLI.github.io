@@ -2,6 +2,7 @@
     <div class="par">
       the prop default value -> {{namn}}
     </div>
+    
 </template>
 <script>
 export default {

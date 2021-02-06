@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
+      <p style="color: green; position: absolute; margin-top:25px">You are {{set}}</p>
       <router-link to="/">Home</router-link> |
       <router-link to="/Listrender">Listrender</router-link> |
       <router-link to="/pro">props</router-link>
-      
     </div>
-    {{set}}
+    
     <router-view/>
     
   </div>
@@ -48,6 +48,7 @@ body{
   background-repeat: no-repeat;
   background-position-x: 40vw;
 }
+
 #nav {
   padding: 30px;
   

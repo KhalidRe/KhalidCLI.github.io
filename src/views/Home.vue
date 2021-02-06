@@ -2,11 +2,13 @@
 
   <div class="home">
     <Model></Model>
+    
   </div>
 </template>
 
 <script>
 import Model from '@/components/Model.vue'
+
 
 
 
@@ -20,8 +22,7 @@ import Model from '@/components/Model.vue'
 export default {
   name: 'Home',
   components: {
-    Model
-   
+    Model,
     
     
     
