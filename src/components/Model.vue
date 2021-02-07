@@ -2,7 +2,7 @@
     <div class="oke">
         <form @submit.prevent="onSubmit">
         <input v-model="userName" placeholder="Type anything" />
-        <input type="submit" value="Send" />
+        <button type="submit">{{txtSend}}</button>
       </form>
       <div>{{ message }}</div>
 
@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-    
+    props:['txtSend'],
   data() {
       return{message: "",
     userName: "",}

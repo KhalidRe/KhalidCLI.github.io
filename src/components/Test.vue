@@ -2,12 +2,14 @@
     <div class="ere">
         <button v-on:click="show = !show" class="new_pos"></button>
         <transition name="fade">
-            <div v-if="show">
+            <div v-if="!show">
         <div class="rand_pos" id="rand" style="position: absolute"></div>
         <div class="rand_pos1" id="rand" style="position: absolute"></div>
         <div class="rand_pos2" id="rand" style="position: absolute"></div>
         <div class="rand_pos3" id="rand" style="position: absolute"></div>
+        
         </div>
+        
         </transition>
         
 <div id="pos_log" class="log">x: 0<br />y: 0</div>
@@ -16,11 +18,19 @@
 </template>
 <script>
 import $ from "jquery"
+
 export default {
+ 
+    components:{
+   
+    
+    
+  },
     data(){
         return{
             show: true,
         }
+        
     },
  mounted(){
      $('.new_pos').click(function() {
@@ -61,16 +71,25 @@ export default {
 }
 </script>
 <style scoped>
+
 #rand {
   font-family: Helvetica, sans-serif;
   word-wrap: break;
-  width: 100px;
-  height: 100px;
-  background: steelblue;
+  width: 10vw;
+  height: 20vh;
+  background-image: url("~@/assets/Explosion.gif");
   padding: 10px;
   text-align: center;
   position: relative;
   z-index: -1;
+  background-position-x: -10.9vw;
+  background-position-y: -8vh;
+  border-radius: 200px;
+  box-shadow: 0 0 20px #000;
+  border: black, solid, 1px;
+  -webkit-box-shadow:inset 0px 0px 0px 10px rgba(0, 0, 0,0.9);
+    -moz-box-shadow:inset 0px 0px 0px 10px rgba(0, 0, 0,0.9);
+    box-shadow:inset 0px 0px 10px 10px rgba(0, 0, 0, 0.9);
 }
 
 .log {
@@ -85,6 +104,7 @@ export default {
   font-size: 11px;
   background: skyblue;
   box-shadow: 0 0 20px #000;
+  
 }
 
 
@@ -128,7 +148,7 @@ body {
   margin-right: 0.5vw;
   cursor: pointer;
 }
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active {
   transition: opacity .5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {

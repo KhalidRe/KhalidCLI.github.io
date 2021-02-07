@@ -1,10 +1,11 @@
 <template>
     <div class="par">
-      the prop default value -> {{namn}}
+      The last name sent into the abyss: {{namn}}
     </div>
     
 </template>
 <script>
+
 export default {
     data(){
         return{

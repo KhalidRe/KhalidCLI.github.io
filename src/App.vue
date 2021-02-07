@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
+      
       <p style="color: green; position: absolute; margin-top:25px">You are {{set}}</p>
       <router-link to="/">Home</router-link> |
       <router-link to="/Listrender">Listrender</router-link> |
       <router-link to="/pro">props</router-link>
+      
     </div>
     
     <router-view/>
@@ -65,6 +67,6 @@ body{
   color: #42b983;
 }
 body{
-  background:(url("./assets/Emran.gif"))
+  background:(url("./assets/Emran.gif"),black)
 }
 </style>

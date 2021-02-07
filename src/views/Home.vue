@@ -1,12 +1,16 @@
-<template v-for="city in cities">
+<template>
 
   <div class="home">
-    <Model></Model>
+    
+    <Model txt-send="Send"></Model>
+    <Test></Test>
+    
     
   </div>
 </template>
 
 <script>
+import Test from "@/components/Test.vue"
 import Model from '@/components/Model.vue'
 
 
@@ -23,6 +27,7 @@ export default {
   name: 'Home',
   components: {
     Model,
+    Test
     
     
     
