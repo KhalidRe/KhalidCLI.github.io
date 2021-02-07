@@ -15,7 +15,7 @@
 export default {
   data () {
     return {
-      show: true,
+      show: false,
       city: null,
       cities:"",
     name: "",

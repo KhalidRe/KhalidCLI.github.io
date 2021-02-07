@@ -89,23 +89,23 @@ export default {
 
 
 .new_pos {
-  background: rgba(4, 78, 97,0);
+  background: rgba(0, 5, 7, 0);
   
   padding: 5px;
-  box-shadow: 0 0 20px #555;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
 }
 
 .new_pos:hover {
-  background: #bbb;
+  background: rgb(93, 135, 143);
   box-shadow: 0 0 20px #222;
 }
 
 
 .new_pos:active {
   box-shadow: 0 0 20px #000;
-  background: #aaa;
+  background: rgb(40, 64, 204);
 }
 
 
