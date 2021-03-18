@@ -3,6 +3,7 @@
         <button v-on:click="show = !show" class="new_pos"></button>
         <transition name="fade">
             <div v-if="!show">
+              
         <div class="rand_pos" id="rand" style="position: absolute"></div>
         <div class="rand_pos1" id="rand" style="position: absolute"></div>
         <div class="rand_pos2" id="rand" style="position: absolute"></div>
